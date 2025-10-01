@@ -186,6 +186,7 @@ Para automatizar el análisis en cada interacción con **GitHub**, necesitamos v
 ```
 ### Eclipse ###
 .metadata
+.sonarlint
 bin/
 tmp/
 *.tmp
@@ -374,10 +375,7 @@ Para trabajar en local con las **mismas reglas y configuraciones** que tengamos 
 - Reiniciar Eclipse.
 
 ### 6.2. Conexión con SonarCloud
-1. En **Eclipse**, Ir a *Window > Preferences > SonarQube > Connected Mode*.  
-2. Crear una nueva conexión con **SonarCloud**.  
-3. Autenticarse con un token personal de SonarCloud.  
-4. Enlazar (bind) el proyecto local de Eclipse con su proyecto correspondiente en SonarCloud.  
+Revisar la documentación para la creación de la conexión en el siguiente enlace: [ENLACE](https://docs.sonarsource.com/sonarqube-for-eclipse/team-features/connected-mode-setup)  
 
 De este modo, Eclipse descarga el **Quality Profile** activo en SonarCloud y lo aplica a los análisis locales.  Al editar un fichero y guardar, los **issues** aparecen en la vista de SonarQube del IDE.
 
